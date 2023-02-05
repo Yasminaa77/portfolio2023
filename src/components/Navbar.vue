@@ -14,11 +14,10 @@ import { RouterLink, RouterView } from 'vue-router'
       </router-link>
     </div>
     <div class="navbar-section pages">
-      <router-link to="/" class="navbar-link hover-underline-animation" @click="activate(`Projects`)"  :class="{active: Projects}">Projects</router-link>
-      <router-link to="/About" class="navbar-link hover-underline-animation" @click="activate(`About`)"  :class="{active: About}">About</router-link>
-<h1>
-  {{path}}
-</h1>
+      <router-link to="/" class="navbar-link hover-underline-animation" @click="activate(`/`)"  :class="{active: Projects}">Projects</router-link>
+      <router-link to="/About" class="navbar-link hover-underline-animation" @click="activate(`/About`)"  :class="{active: About}">About</router-link>
+<!--      for Adding to navbar: add the router link here, follow the pattern in data() and methods ( 4 lines)  -->
+
     </div>
   </nav>
 </template>
@@ -32,18 +31,15 @@ export default {
 
       this.Projects = false
       this.About = false
-      // this.Projects = true
-      this.path === `/About`? this.About=true: this.Projects = true;
 
-      // this[pageName]= true;
-      // some code to filter users
+      if (this.path ===`/About`) {this.About=true;}
+      else{this.Projects = true;}
+
     }
   },
-  // mounted() {
-  //
-  //   console.log(this.$el.textContent) // I'm text inside the component.
-  //
-  // },
+  mounted() {
+    this.path === `/About`? this.About=true: this.Projects = true;
+  },
   data(){
     return {
       Projects: false,
@@ -148,23 +144,26 @@ export default {
   content: '';
   position: absolute;
   width: 100%;
-  transform: scaleX(0);
+  /*transform: scaleX(0);*/
   height: 2px;
   bottom: -2px;
   left: 0;
   background-color: #5EC19E;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+  /*transform-origin: bottom right;*/
+  /*transition: transform 0.25s ease-out;*/
 }
 
-.hover-underline-animation:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+.hover-underline-animation:hover::after{
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
 }
 
 .active{
-  /*color: red;*/
-  /*background-color: #5ec19e;*/
+  /*text-decoration: underline;*/
+  text-decoration: peru solid;
+
 }
 
 /*.active{*/
