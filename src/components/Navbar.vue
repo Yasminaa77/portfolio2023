@@ -131,52 +131,22 @@ export default {
 }
 
 
+.hover-underline-animation{
+  text-decoration: underline rgba(94, 193, 158, 0) 2px;
+  text-underline-offset: 7px;
+  transition: 0.3s;
 
-/*<!--      https://www.30secondsofcode.org/css/s/hover-underline-animation-->*/
-
-.hover-underline-animation {
-  display: inline-block;
-  position: relative;
-  /*color: #0087ca;*/
 }
 
-.hover-underline-animation::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  /*transform: scaleX(0);*/
-  height: 2px;
-  bottom: -2px;
-  left: 0;
-  background-color: #5EC19E;
-  opacity: 0;
-  transition: opacity 300ms, transform 300ms;
-  /*transform-origin: bottom right;*/
-  /*transition: transform 0.25s ease-out;*/
-}
-
-.hover-underline-animation:hover::after{
-  opacity: 1;
-  transform: translate3d(0, 0.2em, 0);
+.hover-underline-animation:hover{
+  text-decoration: underline rgba(94, 193, 158, 1) 2px;
+  text-underline-offset: 7px;
 }
 
 .active{
-  /*text-decoration: underline;*/
-  text-decoration: peru solid;
-
+  text-decoration: underline #5ec19e 2px;
+  text-underline-offset: 7px;
 }
 
-/*.active{*/
-/*  content: '';*/
-/*  position: absolute;*/
-/*  width: 100%;*/
-/*  height: 2px;*/
-/*  bottom: 2px;*/
-/*  left: 0;*/
-/*  background-color: #5EC19E;*/
-/*  transform-origin: bottom left;*/
-/*  transition: transform 0.25s ease-out;*/
-
-/*}*/
 
 </style>
