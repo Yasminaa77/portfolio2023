@@ -8,14 +8,17 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
   <nav class="navbar">
     <div class="navbar-section logo">
-        <router-link to="/" class="navbar-link">
-          <img src="../assets/logo-green-noSpace.png" alt="hero-image"  height="25" >
-          <p>asmina Amirifar</p>
-        </router-link>
+      <router-link to="/" class="navbar-link">
+        <img src="../assets/logo-green-noSpace.png" alt="hero-image"  height="25" >
+        <p>asmina Amirifar</p>
+      </router-link>
     </div>
     <div class="navbar-section pages">
-      <router-link to="/" class="navbar-link hover-underline-animation">Projects</router-link>
-      <router-link to="/About" class="navbar-link hover-underline-animation">About</router-link>
+      <router-link to="/" class="navbar-link hover-underline-animation" @click="activate(`Projects`)"  :class="{active: Projects}">Projects</router-link>
+      <router-link to="/About" class="navbar-link hover-underline-animation" @click="activate(`About`)"  :class="{active: About}">About</router-link>
+<h1>
+  {{path}}
+</h1>
     </div>
   </nav>
 </template>
@@ -23,6 +26,32 @@ import { RouterLink, RouterView } from 'vue-router'
 <script>
 export default {
   name: "Navbar",
+  methods: {
+    activate: function(pageName){
+      this.path= pageName
+
+      this.Projects = false
+      this.About = false
+      // this.Projects = true
+      this.path === `/About`? this.About=true: this.Projects = true;
+
+      // this[pageName]= true;
+      // some code to filter users
+    }
+  },
+  // mounted() {
+  //
+  //   console.log(this.$el.textContent) // I'm text inside the component.
+  //
+  // },
+  data(){
+    return {
+      Projects: false,
+      About: false,
+      path: window.location.pathname,
+    }
+
+  },
   props: {
     navName: {
       type: String,
@@ -51,7 +80,7 @@ export default {
   justify-content: space-between;
   position: fixed;
   width: 100%;
-  padding: 0.7rem;
+  padding: 0.4rem;
   top: 0;
 
   /*mask-image: linear-gradient(to bottom,black 10%,transparent 80%);*/
@@ -132,5 +161,23 @@ export default {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+.active{
+  /*color: red;*/
+  /*background-color: #5ec19e;*/
+}
+
+/*.active{*/
+/*  content: '';*/
+/*  position: absolute;*/
+/*  width: 100%;*/
+/*  height: 2px;*/
+/*  bottom: 2px;*/
+/*  left: 0;*/
+/*  background-color: #5EC19E;*/
+/*  transform-origin: bottom left;*/
+/*  transition: transform 0.25s ease-out;*/
+
+/*}*/
 
 </style>
