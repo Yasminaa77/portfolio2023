@@ -59,7 +59,6 @@ body{
   margin: 0;
 
 
-
   background-color: #ffffff;
   opacity: 0.8;
   background-image:  radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #ffffff 0.5px);

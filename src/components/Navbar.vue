@@ -80,7 +80,8 @@ export default {
   top: 0;
 
   /*mask-image: linear-gradient(to bottom,black 10%,transparent 80%);*/
-  backdrop-filter: blur(4px);
+  backdrop-filter: invert(90%);
+  /*backdrop-filter: blur(4px);*/
   border-bottom: 0.4mm solid rgba(57,53,61,0.4);
 
 }
