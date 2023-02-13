@@ -1,66 +1,25 @@
 <script setup>
 //import Card from '../components/home/Card.vue';
-
+import Grid from '../components/projects-grid.vue';
 </script>
 
 <template>
   <div id="header">
     <div id="headerContent">
       <p class="red"> Hi, My name is Yasmina</p>
-      <h3 class="hero-text">A Full-Stack Web Developer</h3>
+      <h3 class="hero-text">I'm a Full-Stack Developer</h3>
+      <p class="header-desc">
+
+<!--        I bring the creativity, the coding skills, and a little bit of rain-or-shine spirit to the table.<br>-->
+<!--        This portfolio is a window into <a href="#" class="header-links">my projects</a> and <a href="#" class="header-links">  who I am</a>.-->
+      </p>
+
     </div>
   </div>
 
   <div class="view-main">
-<!--    <div class="center" >-->
-      <div class="container">
-        <div class="card">
-          <div class="card-item">
-            <img src="https://lh3.googleusercontent.com/-h9Vw01ffbKY/YGnJU35eHBI/AAAAAAAACAE/FbXDvjOc5ZojyWTbxkR6zDqG3dTdCNimgCLcBGAsYHQ/1.jpg" alt="" />
-            <div class="card-details">
-              <h1>Card 1</h1>
-              <p>Lorem ipsum dolor sit amet consectetur.</p>
-            </div>
-          </div>
-          <div class="card-item">
-            <img src="https://lh3.googleusercontent.com/-LXockBZNMv4/YGnJU84E1QI/AAAAAAAACAA/wLGSF1b9poMk6Mk-XtvkBK0TfK9n1iH7ACLcBGAsYHQ/2.jpg" alt="" />
-            <div class="card-details">
-              <h1>Card 2</h1>
-              <p>Lorem ipsum dolor sit amet consectetur.</p>
-            </div>
-          </div>
-          <div class="card-item">
-            <img src="https://lh3.googleusercontent.com/-ETl5RnIakrw/YGnJU9vu2lI/AAAAAAAAB_8/835dhd1iImsj2gOZXnQ4reXpdp1fQlHUQCLcBGAsYHQ/3.jpg" alt="" />
-            <div class="card-details">
-              <h1>Card 3</h1>
-              <p>Lorem ipsum dolor sit amet consectetur.</p>
-            </div>
-          </div>
-          <div class="card-item">
-            <img src="https://lh3.googleusercontent.com/-q2LZJIIwqUA/YGnJU3Gz9yI/AAAAAAAACAI/aBrT1HBsGOM4yCINuhgFNDU3f_8f024cgCLcBGAsYHQ/4.jpg" alt="" />
-            <div class="card-details">
-              <h1>Card 4</h1>
-              <p>Lorem ipsum dolor sit amet consectetur.</p>
-            </div>
-          </div>
-        </div>
-<!--      </div>-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
+    <Grid/>
   </div>
-
 </template>
 
 <script>
@@ -87,18 +46,6 @@ export default {
 /*@import url('../../scss/main.scss');*/
 
 
-/*body{*/
-/*  margin: 0;*/
-
-
-/*  background-color: #ffffff;*/
-/*  !*opacity: 0.8;*!*/
-/*  !*background-image:  radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #ffffff 0.5px);*!*/
-/*  !*background-size: 20px 20px;*!*/
-/*  !*background-position: 0 0,10px 10px;*!*/
-/*}*/
-
-
 #header{
   width:100%;
   /*background: rgb(36,36,36);*/
@@ -108,36 +55,49 @@ export default {
   font-family: "Roboto-Regular", sans-serif;
 
   display: flex;
-  justify-content: center; /*change when hero text is centre*/
+  justify-content: left; /*change when hero text is centre*/
   align-items: center;
 
 }
 #headerContent{
-  /*margin:0 5%;*/ /*change when hero text is centre*/
-
+  margin:0 5%; /*change when hero text is centre*/
   /*margin: 0 auto; width: 960px;*/
-  text-align: center;  /*change when hero text is centre*/
+  text-align: left;  /*change when hero text is centre*/
+  /*max-width:768px;*/
 }
+
 
 .view-main{
   font-family: "Roboto-Regular", sans-serif;
   /*margin-top: 20px;*/
-  display: flex;
+  /*display: flex;*/
   /*padding:20px;*/
 }
 
-.center{
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-
-
+/*.center{*/
+/*  text-align: center;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*}*/
 
 .hero-text{
-  font-size: 30px;
-  margin: 5px;
+  font-size: 35px;
+  margin: 5px 0 ;
   color: #0F1438;
+}
+
+.header-desc{
+  font-size: 25px;
+  margin:35px 0;
+  color: #0F1438;
+  font-weight: lighter;
+
+}
+
+.header-links{
+  /*text-decoration: none;*/
+  /*color: #C82c28;*/
+  color: #5ec19e;
 
 
 }
@@ -145,15 +105,5 @@ export default {
   color: #C82c28;
   font-weight: bold;
 }
-
-
-
-
-
-
-
-
-
-
 
 </style>

@@ -13,14 +13,16 @@ body{
   width: 100%;
   background-color: #afeeed;
   display: flex;
-  justify-content: center;
+  justify-content: center; /*change when hero text is centre*/
 }
 .card {
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;   /*change when hero text is centre*/
   position: relative;
   display: grid;
-  gap: 40px;
+  gap: 35px;
+
+  overflow: hidden;
 }
 
 .card .card-item {
@@ -56,10 +58,16 @@ body{
   transform: scale(1.05);
 }
 
-@media(max-width:600px){
+@media(max-width:1300px){
   .card {
-    grid-template-columns: 1fr;  gap: 0 10px;
+    grid-template-columns: 1fr 1fr;
   }
-  .container {
-    height: 210vh;}
+
+}
+
+@media(max-width:768px){
+  .card {
+    grid-template-columns: 1fr; gap: 20px;
+  }
+
 }
