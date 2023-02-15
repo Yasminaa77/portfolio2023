@@ -4,22 +4,23 @@ import Grid from '../components/projects-grid.vue';
 </script>
 
 <template>
+
   <div id="header">
     <div id="headerContent">
-      <p class="red"> Hi, My name is Yasmina</p>
-      <h3 class="hero-text">I'm a Full-Stack Developer</h3>
-      <p class="header-desc">
+<!--      <img class="doodle" src="../assets/doodle.png">-->
 
+      <p class="red"> Hi, My name is Yasmina</p>
+      <h3 class="hero-text">I'm a Full-Stack <br>Developer</h3>
+      <p class="header-desc">
 <!--        I bring the creativity, the coding skills, and a little bit of rain-or-shine spirit to the table.<br>-->
 <!--        This portfolio is a window into <a href="#" class="header-links">my projects</a> and <a href="#" class="header-links">  who I am</a>.-->
       </p>
 
     </div>
+    <img class="doodle" src="../assets/doodle.png">
   </div>
 
-  <div class="view-main">
     <Grid/>
-  </div>
 </template>
 
 <script>
@@ -45,18 +46,26 @@ export default {
 /*@import url('./scss/main.scss');*/
 /*@import url('../../scss/main.scss');*/
 
-
+.doodle{
+  opacity: 0.9;
+  width: 200px;
+}
 #header{
   width:100%;
-  /*background: rgb(36,36,36);*/
-  /*background: linear-gradient(0deg, rgba(36,36,36,0) 0%, rgba(239,238,216,1) 100%);*/
+
   height:80vh;
   margin: 0;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Roboto-Regular";
+  /*font-family: 'Courier New', monospace;*/
+
 
   display: flex;
-  justify-content: left; /*change when hero text is centre*/
+  /*gap:40px;*/
+
+justify-content: space-around;
+  /*justify-content: flex-start; !*change when hero text is centre*!*/
   align-items: center;
+
 
 }
 #headerContent{
