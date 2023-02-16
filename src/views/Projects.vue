@@ -7,20 +7,23 @@ import Grid from '../components/projects-grid.vue';
 
   <div id="header">
     <div id="headerContent">
-<!--      <img class="doodle" src="../assets/doodle.png">-->
+      <!--      <img class="doodle" src="../assets/doodle.png">-->
 
       <p class="red"> Hi, My name is Yasmina</p>
       <h3 class="hero-text">I'm a Full-Stack <br>Developer</h3>
       <p class="header-desc">
-<!--        I bring the creativity, the coding skills, and a little bit of rain-or-shine spirit to the table.<br>-->
-<!--        This portfolio is a window into <a href="#" class="header-links">my projects</a> and <a href="#" class="header-links">  who I am</a>.-->
+        <!--        I bring the creativity, the coding skills, and a little bit of rain-or-shine spirit to the table.<br>-->
+        <!--        This portfolio is a window into <a href="#" class="header-links">my projects</a> and <a href="#" class="header-links">  who I am</a>.-->
       </p>
 
     </div>
     <img class="doodle" src="../assets/doodle.png">
   </div>
+<div class="main">
+  <h1>Projects</h1>
 
-    <Grid/>
+  <Grid/>
+</div>
 </template>
 
 <script>
@@ -54,45 +57,31 @@ export default {
   width:100%;
 
   height:80vh;
+  max-width: 1200px;
   margin: 0;
-  font-family: "Roboto-Regular";
-  /*font-family: 'Courier New', monospace;*/
-
 
   display: flex;
-  /*gap:40px;*/
-
-justify-content: space-around;
+  justify-content: space-between;
   /*justify-content: flex-start; !*change when hero text is centre*!*/
   align-items: center;
 
 
 }
 #headerContent{
-  margin:0 5%; /*change when hero text is centre*/
+ /*margin:0 5%; !*change when hero text is centre*!*/
   /*margin: 0 auto; width: 960px;*/
-  text-align: left;  /*change when hero text is centre*/
+  /*text-align: left;  !*change when hero text is centre*!*/
   /*max-width:768px;*/
 }
 
 
-.view-main{
-  font-family: "Roboto-Regular", sans-serif;
-  /*margin-top: 20px;*/
-  /*display: flex;*/
-  /*padding:20px;*/
-}
-
-/*.center{*/
-/*  text-align: center;*/
-/*  align-items: center;*/
-/*  justify-content: center;*/
-/*}*/
-
 .hero-text{
-  font-size: 35px;
+  font-size: 75px;
   margin: 5px 0 ;
   color: #0F1438;
+  font-family: "Rajdhani-Regular",monospace;
+
+
 }
 
 .header-desc{
@@ -115,4 +104,25 @@ justify-content: space-around;
   font-weight: bold;
 }
 
+
+@media(max-width:768px) {
+  #header {
+  flex-direction: column;
+    justify-content: space-around;
+    height: 60vh;
+    margin:5vh;
+    text-align: center;
+
+  }
+
+
+}
+
+@media(max-width:620px) {
+  .hero-text{
+    font-size: 50px;
+  }
+
+
+}
 </style>

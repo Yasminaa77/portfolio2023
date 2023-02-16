@@ -9,8 +9,8 @@ import { RouterLink, RouterView } from 'vue-router'
   <nav class="navbar">
     <div class="navbar-section logo">
       <router-link to="/" class="navbar-link">
-        <img src="../assets/logo-green-noSpace.png" alt="hero-image"  height="25" >
-        <p>asmina Amirifar</p>
+        <img class="logo-y" src="../assets/logo-green-noSpace.png" alt="hero-image"  >
+        <p class="logo-name">asmina Amirifar</p>
       </router-link>
     </div>
     <div class="navbar-section pages">
@@ -137,6 +137,21 @@ export default {
   text-underline-offset: 7px;
 }
 
+.logo-y, img{
+  height: 30px;
+}
+
+
+@media(max-width:620px){
+  .logo-name{
+    display:none;
+  }
+
+
+
+
+
+}
 
 
 </style>

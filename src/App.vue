@@ -17,6 +17,12 @@ import Navbar from './components/Navbar.vue'
   url('/src/assets/fonts/Roboto-Light.ttf') format("truetype");
 }
 
+@font-face {
+  font-family: "Rajdhani-Regular";
+  src: local("Rajdhani"),
+  url('/src/assets/fonts/Rajdhani-Regular.ttf') format("truetype");
+}
+
 main {
   display: flex;
   flex-direction: column;

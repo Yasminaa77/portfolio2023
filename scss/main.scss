@@ -3,6 +3,8 @@ body{
   margin: 0;
   background-color: #ffffff;
   padding: 6%;
+  font-family: "Roboto-Regular", sans-serif;
+
 }
 
 
@@ -37,13 +39,15 @@ body{
 
   -ms-flex: 25%; /* IE10 */
   flex: 25%;
-  max-width: 22%;
+  max-width: 23%;
   //padding: 0 4px;
 
   //margin: 2% 0;
 
 
 }
+
+
 
 .card img {
 
@@ -58,56 +62,81 @@ body{
 }
 
 
-.card .card-details {
-  //background-color: red;
-  position: absolute;
+.card-overlay{
+
+  position:absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
+
+  padding:20px;
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  //background-color: #C82c28;
+
+}
+
+.card-overlay h3{
+  margin:0;
+
+}
+
+.card .card-details {
+  //background-color: red;
+  //position: absolute;
+  //top: 0;
+  //left: 0;
+  //bottom: 0;
+  //right: 0;
   overflow: hidden;
   border-radius: 6px;
-  padding: 1rem;
+  //padding: 1rem;
   opacity:0;
   transition: 0.4s ease-in-out all;
 
-  display: flex;
-  align-items: center;
-
-  background: rgb(36,36,36);
-  background: linear-gradient(0deg, rgba(36,36,36,0.7456232492997199) 0%, rgba(255,255,255,0) 100%);
+  //background: rgb(36,36,36);
+  //background: linear-gradient(0deg, rgba(36,36,36,0.7456232492997199) 0%, rgba(255,255,255,0) 100%);
   //border:solid black;
 }
 
 
 .card-title {
-  position: absolute;
-  //padding: 10px 5px;
-  font-size: 18px;
-  margin: 5px 20px;
-  top: 0;
+  //position: absolute;
+  ////padding: 10px 5px;
+  //font-size: 18px;
+  //margin: 5px 20px;
+  //top: 0;
 
+  color:white;
   z-index: 5;
-
 }
 
 
-
-.card-details h1 {
-  font-size: 18px;
-  margin: 2px 0;
-}
 .card-details p {
-  font-size: 14px;
+  font-size: 16px;
 }
+
+.card-overlay:hover {
+  background: rgb(36,36,36);
+  background: linear-gradient(0deg, rgba(36,36,36,0.7456232492997199) 0%, rgba(255,255,255,0) 100%);
+}
+
 .card-item:hover .card-details {
   opacity: 1;
+  //height:100%;
+  //background-color: red;
   //bottom: 10px;
 }
 
 .card-item:hover img {
-  //transform: scale(1.05);
-  border-radius: 6px;
+  //transform: scale(1.06);
+
+  //border-radius: 10px;
 
 }
 
@@ -121,11 +150,18 @@ body{
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 896px) {
   .card .card-item {
     -ms-flex: 45%;
     flex: 45%;
     max-width: 45%;
+  }
+
+  .main{
+    text-align: center;
+    margin-top: 15vh
+
+
   }
 }
 
