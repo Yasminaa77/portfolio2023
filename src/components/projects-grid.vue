@@ -2,7 +2,11 @@
 </script>
 
 
+
+
+
 <template>
+
   <!--    <div class="center" >-->
   <div class="container">
     <div class="card">

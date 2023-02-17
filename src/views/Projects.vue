@@ -9,7 +9,7 @@ import Grid from '../components/projects-grid.vue';
     <div id="headerContent">
       <!--      <img class="doodle" src="../assets/doodle.png">-->
 
-      <p class="red"> Hi, My name is Yasmina</p>
+      <p class="red"> Hi, My name is <a href="#">Yasmina</a></p>
       <h3 class="hero-text">I'm a Full-Stack <br>Developer</h3>
       <p class="header-desc">
         <!--        I bring the creativity, the coding skills, and a little bit of rain-or-shine spirit to the table.<br>-->
@@ -74,6 +74,38 @@ export default {
   /*max-width:768px;*/
 }
 
+#header a {
+  text-decoration: none;
+  color: #C82c28;
+  font-family: 'Roboto-Medium';
+
+  /*font-weight: 900;*/
+  position: relative;
+}
+
+/* #header a::before {*/
+/*  content: '';*/
+/*  background-color: rgba(94, 193, 158, .5);*/
+/*  position: absolute;*/
+/*  left: -1px;*/
+/*  bottom: -5px;*/
+/*  width: 100%;*/
+/*  height: 3px;*/
+/*  z-index: -1;*/
+/*  transition: all .3s ease-in-out;*/
+/*}*/
+
+/*#header a:hover::before {*/
+/*  bottom: -3px;*/
+/*  background-color: rgba(94, 193, 158, 1);*/
+
+/*  !*background-color:#0F1438;*!*/
+
+/*  !*height: 100%;*!*/
+/*}*/
+
+
+
 
 .hero-text{
   font-size: 75px;
@@ -95,9 +127,7 @@ export default {
 .header-links{
   /*text-decoration: none;*/
   /*color: #C82c28;*/
-  color: #5ec19e;
-
-
+  /*color: #5ec19e;*/
 }
 .red{
   color: #C82c28;

@@ -5,6 +5,13 @@ import Navbar from './components/Navbar.vue'
 
 <style scoped>
 
+
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: local("Roboto"),
+  url('/src/assets/fonts/Roboto-Medium.ttf') format("truetype");
+}
+
 @font-face {
   font-family: 'Roboto-Regular';
   src: local("Roboto"),
