@@ -111,7 +111,7 @@ export default {
   font-size: 75px;
   margin: 5px 0 ;
   color: #0F1438;
-  font-family: "Rajdhani-Regular",monospace;
+  font-family: "Rajdhani-Light",monospace;
 
 
 }

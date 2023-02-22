@@ -30,6 +30,12 @@ import Navbar from './components/Navbar.vue'
   url('/src/assets/fonts/Rajdhani-Regular.ttf') format("truetype");
 }
 
+@font-face {
+  font-family: "Rajdhani-Light";
+  src: local("Rajdhani"),
+  url('/src/assets/fonts/Rajdhani-Light.ttf') format("truetype");
+}
+
 main {
   display: flex;
   flex-direction: column;
