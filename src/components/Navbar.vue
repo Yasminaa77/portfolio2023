@@ -146,9 +146,16 @@ export default {
   }
 
 
+  .navbar {
+    padding: 1rem;
+
+  }
+
+  .pages .navbar-link {
+    font-size: 18px;
 
 
-
+  }
 }
 
 

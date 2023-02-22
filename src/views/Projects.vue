@@ -122,7 +122,7 @@ export default {
     flex-direction: column;
     justify-content: space-around;
     align-items:center;
-    margin:5vh;
+    margin:90px;
     text-align: center;
 
     height:60vh;
