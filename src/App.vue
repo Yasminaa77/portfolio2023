@@ -1,5 +1,7 @@
 <script setup>
 import Navbar from './components/Navbar.vue'
+import Footer from "./components/Footer.vue";
+
 </script>
 
 
@@ -40,19 +42,30 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 5.5rem;
+  /*margin-bottom: 5.5rem;*/
   overflow-x:hidden;
-  /*background-color: black;*/
 }
 .navbarStyles{
   z-index:200;
+  /*background-color: #646cff;*/
+
 }
+
+.viewStyles{
+  padding: 6% 6% 0 6%;
+}
+
+
 </style>
 
 
 <template>
   <main>
     <Navbar class="navbarStyles"/>
-    <RouterView />
+    <span class="viewStyles">
+      <RouterView/>
+    </span>
+    <Footer class="navbarStyles"/>
+
   </main>
 </template>

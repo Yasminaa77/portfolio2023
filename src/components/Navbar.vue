@@ -16,8 +16,6 @@ import { RouterLink, RouterView } from 'vue-router'
     <div class="navbar-section pages">
       <router-link to="/" class="navbar-link hover-underline-animation" @click="activate(`/`)"  :class="{active: Projects}">Projects</router-link>
       <router-link to="/About" class="navbar-link hover-underline-animation" @click="activate(`/About`)"  :class="{active: About}">About</router-link>
-<!--      for Adding to navbar: add the router link here, follow the pattern in data() and methods ( 4 lines)  -->
-
     </div>
   </nav>
 </template>
@@ -142,7 +140,7 @@ export default {
 }
 
 
-@media(max-width:620px){
+@media(max-width:896px){
   .logo-name{
     display:none;
   }
