@@ -16,7 +16,7 @@ import Grid from '../components/projects-grid.vue';
       </p>
 
     </div>
-    <img class="doodle" src="../assets/doodle.png">
+    <img class="doodle" src="../assets/yasmina.gif">
   </div>
 <div class="main">
   <h2>Projects</h2>

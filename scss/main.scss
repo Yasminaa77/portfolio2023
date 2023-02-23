@@ -50,6 +50,7 @@ body{
 
 .card .card-item:hover {
   border: 3px solid #5EC19E;
+
 }
 
 .image-container{
@@ -118,8 +119,8 @@ body{
 
   overflow: hidden;
   border-radius: 6px;
-  opacity:0;
-  transition: 0.2s ease-in-out all;
+  //opacity:1;
+  //transition: 0.2s ease-in-out all;
 
   //background: rgb(36,36,36);
   //background: linear-gradient(180deg, rgba(36,36,36,0.5) 0%, rgba(255,255,255,0) 100%);
@@ -145,32 +146,31 @@ body{
   font-size: 16px;
  font-family: "Roboto-Medium", sans-serif;
   color: #0F1438;
+
 }
 
 .card-overlay:hover {
   opacity:1;
+
   //background: rgb(36,36,36);
   //background: linear-gradient(0deg, rgba(36,36,36,0.7456232492997199) 0%, rgba(255,255,255,0) 100%);
 }
 
-.card-item:hover{
-  //border: 2px solid red;
-}
-
 
 .card-item:hover .card-details {
-  opacity: 1;
+  //transform: translate(0, -10px);
+
+  //opacity: 1;
   //height:100%;
   //background-color: red;
   //bottom: 10px;
 
 }
 
+
+
 .card-item:hover img {
   //transform: scale(1.06);
-
-  //border-radius: 10px;
-
 }
 
 

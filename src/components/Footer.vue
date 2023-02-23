@@ -73,8 +73,6 @@ p{
   position: absolute;
   bottom: 0;
 
-  background-color: red;
-
   margin:30px 0 10px 0;
   font-family: "Roboto-Regular", sans-serif;
   color:#333333;
