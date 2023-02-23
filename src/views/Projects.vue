@@ -1,27 +1,31 @@
 <script setup>
+
+
+
 //import Card from '../components/home/Card.vue';
 import Grid from '../components/projects-grid.vue';
+import TryOut from "../components/TryOut.vue";
 </script>
 
 <template>
 
   <div id="header">
     <div id="headerContent">
-      <!--      <img class="doodle" src="../assets/doodle.png">-->
-
       <p class="red"> Hi, My name is <a href="#">Yasmina</a></p>
-      <h3 class="hero-text">I'm a Full-Stack <br>Developer</h3>
+      <h3 class="hero-text twoLines">I'm a Full-Stack<br> Developer</h3>
+      <h3 class="hero-text oneLine">I'm a Full-Stack Developer</h3>
       <p class="header-desc">
-        <!--        I bring the creativity, the coding skills, and a little bit of rain-or-shine spirit to the table.<br>-->
-        <!--        This portfolio is a window into <a href="#" class="header-links">my projects</a> and <a href="#" class="header-links">  who I am</a>.-->
+
+        I bring the creativity, the coding skills, and a little bit of rain-or-shine spirit to the table.<br>
+<!--                This portfolio is a window into <a href="#" class="header-links">my projects</a> and <a href="#" class="header-links">  who I am</a>.-->
       </p>
 
     </div>
-    <img class="doodle" src="../assets/doodle.png">
+    <img class="doodle" src="../assets/yasmina.gif">
   </div>
 <div class="main">
-  <h1>Projects</h1>
-
+  <h2>Projects</h2>
+<!--  <TryOut />-->
   <Grid/>
 </div>
 </template>
@@ -49,12 +53,17 @@ export default {
 /*@import url('./scss/main.scss');*/
 /*@import url('../../scss/main.scss');*/
 
+
+#headerContent{
+  margin-right: 100px;
+}
 .doodle{
   opacity: 0.9;
   width: 200px;
 }
+
 #header{
-  width:100%;
+  /*width:100%;*/
 
   height:80vh;
   max-width: 1200px;
@@ -67,12 +76,6 @@ export default {
 
 
 }
-#headerContent{
- /*margin:0 5%; !*change when hero text is centre*!*/
-  /*margin: 0 auto; width: 960px;*/
-  /*text-align: left;  !*change when hero text is centre*!*/
-  /*max-width:768px;*/
-}
 
 #header a {
   text-decoration: none;
@@ -81,39 +84,21 @@ export default {
 
   /*font-weight: 900;*/
   position: relative;
+
+
 }
-
-/* #header a::before {*/
-/*  content: '';*/
-/*  background-color: rgba(94, 193, 158, .5);*/
-/*  position: absolute;*/
-/*  left: -1px;*/
-/*  bottom: -5px;*/
-/*  width: 100%;*/
-/*  height: 3px;*/
-/*  z-index: -1;*/
-/*  transition: all .3s ease-in-out;*/
-/*}*/
-
-/*#header a:hover::before {*/
-/*  bottom: -3px;*/
-/*  background-color: rgba(94, 193, 158, 1);*/
-
-/*  !*background-color:#0F1438;*!*/
-
-/*  !*height: 100%;*!*/
-/*}*/
-
-
-
 
 .hero-text{
   font-size: 75px;
   margin: 5px 0 ;
   color: #0F1438;
-  font-family: "Rajdhani-Regular",monospace;
+  font-family: "Rajdhani-Light",monospace;
 
-
+  /*max-width:70vh;*/
+}
+.oneLine{
+  display:none;
+  margin-top:0;
 }
 
 .header-desc{
@@ -121,38 +106,71 @@ export default {
   margin:35px 0;
   color: #0F1438;
   font-weight: lighter;
+  /*max-width:70vh;*/
 
 }
 
-.header-links{
-  /*text-decoration: none;*/
-  /*color: #C82c28;*/
-  /*color: #5ec19e;*/
-}
 .red{
   color: #C82c28;
   font-weight: bold;
 }
 
+main h2{
+  margin-bottom:40px;
+  /*color:red;*/
+}
 
-@media(max-width:768px) {
+
+
+
+
+@media screen and (max-width: 896px) {
+
   #header {
-  flex-direction: column;
+    flex-direction: column;
     justify-content: space-around;
-    height: 60vh;
-    margin:5vh;
+    align-items:center;
+    margin:90px;
     text-align: center;
 
+    height:60vh;
   }
 
+  #headerContent{
+    margin-right: 0;
+  }
 
-}
-
-@media(max-width:620px) {
   .hero-text{
-    font-size: 50px;
+    font-size: 40px;
+    font-family:"Rajdhani-Regular";
+  }
+  .oneLine{
+    display:block;
+
   }
 
+  .twoLines{
+    display:none;
+  }
 
 }
+
+
+
+
+
+@media(max-width:768px) {
+
+  .header-desc{
+    font-size: 18px;
+  }
+
+  .hero-text{
+    font-size: 30px;
+  }
+
+}
+
+
+/*}*/
 </style>
