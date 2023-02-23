@@ -1,22 +1,20 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 // import Iconify from './Iconify.vue';
-
+import { Icon } from '@iconify/vue';
 </script>
 
 
 <template>
   <footer class="footer">
-    <img class="logo-y" src="../assets/logo-green-noSpace.png" alt="hero-image"  >
+<!--    <img class="logo-y" src="../assets/logo-green-noSpace.png" alt="hero-image"  >-->
     <div class="icons">
-      <span>icon1</span>
-      <span>icon2</span>
-      <span>icon3</span>
+      <a href="mailto:yaasminaa77@gmail.com"><Icon class="icons" icon="entypo:email" /></a>
+      <a href="https://www.linkedin.com/in/yasmina-amir-70b88b196/" target=”_blank”> <Icon class="icons" icon = "ri:linkedin-fill" /></a>
+      <a href="https://github.com/Yasminaa77" target=”_blank”><Icon class="icons" icon="teenyicons:github-solid" /></a>
     </div>
     <p>yaasminaa77@gmail.com</p>
-
-
-    <p class="copyRight">© 2023 by Yasmina Amirifar</p>
+    <p class="copyRight">©2023 by Yasmina Amirifar</p>
   </footer>
 </template>
 
@@ -39,11 +37,16 @@ export default {
 
 <style scoped>
 
+.icons{
+  font-size: 30px;
+  margin: 0 10px;
+  color:#555555;
+}
+
 .footer {
 
   /*position:relative; !* needed for footer positioning*!*/
   /* center, not in IE5 */
-
 
   display: flex;
   justify-content: flex-start;

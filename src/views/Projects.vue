@@ -1,6 +1,10 @@
 <script setup>
+
+
+
 //import Card from '../components/home/Card.vue';
 import Grid from '../components/projects-grid.vue';
+import TryOut from "../components/TryOut.vue";
 </script>
 
 <template>
@@ -11,7 +15,8 @@ import Grid from '../components/projects-grid.vue';
       <h3 class="hero-text twoLines">I'm a Full-Stack<br> Developer</h3>
       <h3 class="hero-text oneLine">I'm a Full-Stack Developer</h3>
       <p class="header-desc">
-                I bring the creativity, the coding skills, and a little bit of rain-or-shine spirit to the table.<br>
+
+        I bring the creativity, the coding skills, and a little bit of rain-or-shine spirit to the table.<br>
 <!--                This portfolio is a window into <a href="#" class="header-links">my projects</a> and <a href="#" class="header-links">  who I am</a>.-->
       </p>
 
@@ -20,7 +25,7 @@ import Grid from '../components/projects-grid.vue';
   </div>
 <div class="main">
   <h2>Projects</h2>
-
+<!--  <TryOut />-->
   <Grid/>
 </div>
 </template>
@@ -105,18 +110,21 @@ export default {
 
 }
 
-.header-links{
-  /*text-decoration: none;*/
-  /*color: #C82c28;*/
-  /*color: #5ec19e;*/
-}
 .red{
   color: #C82c28;
   font-weight: bold;
 }
 
-@media screen and (max-width: 896px) {
+main h2{
+  margin-bottom:40px;
+  /*color:red;*/
+}
 
+
+
+
+
+@media screen and (max-width: 896px) {
 
   #header {
     flex-direction: column;

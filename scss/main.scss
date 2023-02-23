@@ -35,16 +35,21 @@ body{
 .card .card-item {
   position: relative;
 
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-  max-width: 23%;
-  //padding: 0 4px;
+  //-ms-flex: 25%; /* IE10 */
+  //flex: 25%;
+  //max-width: 23%;
+  -ms-flex: 45%; /* IE10 */
+  flex: 45%;
+  max-width: 50%;
+
 
   //margin: 2% 0;
   border-radius: 6px;
-  border: 3px solid rgba(50, 115, 220, 0);
+  border: 3px solid rgba(189, 195, 199, 0);
   overflow: hidden;
   transition: 0.4s ease-in-out all;
+  //box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
 
 }
 
@@ -57,7 +62,7 @@ body{
   vertical-align: middle;
   width: 100%;
   //max-width:500px;
-  height:300px;
+  height:200px;
 }
 
 .card img {
@@ -87,10 +92,11 @@ body{
   justify-content: flex-start;
 
   //background: rgb(15,20,56);
-  //background: linear-gradient(0deg, rgba(15,20,56,0.7456232492997199) 0%, rgba(255,255,255,0) 100%);
+  //background: linear-gradient(0deg, rgba(230, 100, 100,0.3) 0%, rgba(255,255,255,0) 100%);
+  backdrop-filter: blur(4px);
 
   opacity:0;
-  transition: 0.4s ease-in-out all;
+  transition: 0.3s ease-in-out all;
 
   //border-radius: 4px;
   //background-color: #C82c28;
@@ -113,8 +119,8 @@ body{
 
   display: flex;
   align-items: center;
-  flex-direction: column;
-  justify-content: center;
+  //flex-direction: column;
+  justify-content: flex-start;
 
 
   overflow: hidden;
@@ -176,34 +182,35 @@ body{
 
 @media(max-width:1200px) {
   .card .card-item {
-    -ms-flex: 30%;
-    flex: 30%;
-    max-width: 30%;
+    //-ms-flex: 30%;
+    //flex: 30%;
+    //max-width: 30%;
   }
 }
 
 
 @media screen and (max-width: 896px) {
   .card .card-item {
-    -ms-flex: 45%;
-    flex: 45%;
-    max-width: 50%;
+    //-ms-flex: 45%;
+    //flex: 45%;
+    //max-width: 50%;
+    -ms-flex: 90%;
+    flex: 90%;
+    max-width: 100%;
   }
 
   .main{
     text-align: center;
     margin-top: 15vh
-
-
   }
 }
 
 
 @media(max-width:620px) {
   .card .card-item {
-    -ms-flex: 90%;
-    flex: 90%;
-    max-width: 90%;
+    //-ms-flex: 90%;
+    //flex: 90%;
+    //max-width: 90%;
   }
 
   .card{
@@ -211,3 +218,5 @@ body{
 
   }
 }
+
+
