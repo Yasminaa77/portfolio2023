@@ -18,7 +18,7 @@
             <h3>Phished</h3>
           </div>
           <div class="image-container">
-            <img src="../assets/placeholder.png" alt="" />
+            <img src="../assets/homepage-phished.jpg" alt="" />
           </div>
 
           <div class="card-overlay">
@@ -34,7 +34,7 @@
             <h3>Trash Queens</h3>
           </div>
           <div class="image-container">
-            <img src="../assets/placeholder.png" alt="" />
+            <img src="../assets/homepage-tq.jpg" alt="" />
           </div>
 
           <div class="card-overlay">
@@ -50,7 +50,7 @@
             <h3>Local Scope</h3>
           </div>
           <div class="image-container">
-            <img src="../assets/placeholder.png" alt="" />
+<!--            <img src="../assets/placeholder.png" alt="" />-->
           </div>
 
           <div class="card-overlay">
@@ -66,7 +66,7 @@
             <h3>Cibo</h3>
           </div>
           <div class="image-container">
-            <img src="../assets/placeholder.png" alt="" />
+<!--            <img src="../assets/placeholder.png" alt="" />-->
           </div>
 
           <div class="card-overlay">

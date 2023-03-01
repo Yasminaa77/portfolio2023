@@ -53,7 +53,6 @@ export default {
 /*@import url('./scss/main.scss');*/
 /*@import url('../../scss/main.scss');*/
 
-
 #headerContent{
   margin-right: 100px;
 }
