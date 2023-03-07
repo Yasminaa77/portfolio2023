@@ -66,7 +66,7 @@
             <h3>Cibo</h3>
           </div>
           <div class="image-container">
-<!--            <img src="../assets/placeholder.png" alt="" />-->
+            <img src="../assets/homepage-cibo.jpg" alt="" />
           </div>
 
           <div class="card-overlay">
