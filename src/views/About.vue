@@ -52,7 +52,7 @@ export default {
 
   /*height:70vh;*/
   max-width: 1200px;
-  margin: 0;
+  margin: 50px 0;
 
   display: flex;
   justify-content: space-between;
@@ -97,10 +97,22 @@ main h2{
 }
 
 
+
+@media screen and (max-width: 896px) {
+
+  #header {
+    margin: 50px 0;
+  }
+
+  .headerContent{
+    margin-bottom:20px ;
+  }
+}
+
 @media screen and (max-width: 768px) {
 
   #header {
-    margin: 20vh 0;
+    margin: 50px 0;
 
 
     flex-direction: column;
@@ -124,6 +136,12 @@ main h2{
 }
 
 
+@media screen and (max-width: 600px) {
+
+  #header {
+    margin: 100px 0;
+  }
+}
 
 
 

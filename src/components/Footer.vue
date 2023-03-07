@@ -7,108 +7,62 @@ import { Icon } from '@iconify/vue';
 
 <template>
   <footer class="footer">
-<!--    <img class="logo-y" src="../assets/logo-green-noSpace.png" alt="hero-image"  >-->
     <div class="icons">
-      <a href="mailto:yaasminaa77@gmail.com"><Icon class="icons" icon="entypo:email" /></a>
-      <a href="https://www.linkedin.com/in/yasmina-amir-70b88b196/" target=”_blank”> <Icon class="icons" icon = "ri:linkedin-fill" /></a>
-      <a href="https://github.com/Yasminaa77" target=”_blank”><Icon class="icons" icon="teenyicons:github-solid" /></a>
+      <a href="mailto:yaasminaa77@gmail.com"><Icon class="icon" icon="mdi:email" /></a>
+      <a href="https://www.linkedin.com/in/yasmina-amir-70b88b196/" target="_blank"><Icon class="icon" icon="mdi:linkedin" /></a>
+      <a href="https://github.com/Yasminaa77" target="_blank"><Icon class="icon" icon="mdi:github" /></a>
     </div>
-    <p>yaasminaa77@gmail.com</p>
+    <p class="email">yaasminaa77@gmail.com</p>
     <p class="copyRight">©2023 by Yasmina Amirifar</p>
   </footer>
 </template>
 
-<script>
-export default {
-  name: "Footer",
-  methods: {
-  },
-  mounted() {
-  },
-  data(){
-    return {
-
-    }
-  },
-  props: {
-  },
-}
-</script>
-
 <style scoped>
-
-.icons{
-  font-size: 30px;
-  margin: 0 10px;
-  color:#555555;
-}
-
 .footer {
-
-  /*position:relative; !* needed for footer positioning*!*/
-  /* center, not in IE5 */
-
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
-  /*padding: 0.4rem;*/
-  /*background-color: #C82c28;*/
-  margin: 6% 0 0 0;
+  background-color: white;
+  margin-top: 6%;
   padding-top: 20px;
-  height:150px;
-
-  backdrop-filter: blur(4px);
-  border-top: 0.4mm solid rgba(57,53,61,0.4);
-
+  height: 130px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
   font-size: 14px;
   font-family: "Roboto-Medium", sans-serif;
-  color:#0F1438;
-
+  color: #0F1438;
 }
 
-p{
-  margin:0;
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
-.copyRight{
-  position: absolute;
-  bottom: 0;
+.icon {
+  font-size: 30px;
+  margin: 0 10px;
+  color: #555555;
+  transition: color 0.2s ease-in-out;
+}
 
-  margin:30px 0 10px 0;
+.icon:hover {
+  color: #0F1438;
+}
+
+.email {
+  margin: 0;
+  font-size: 16px;
+  font-family: "Roboto-Medium", sans-serif;
+  color: #0F1438;
+}
+
+.copyRight {
+  margin-top: 10px;
   font-family: "Roboto-Regular", sans-serif;
-  color:#333333;
+  color: #333333;
   font-size: 12px;
-
 }
-
-/*.navbar-section {*/
-/*  margin: 0 20px;*/
-/*  color: #373a3c;*/
-/*  font-size: 0.75rem;*/
-/*  !*font-family: "Roboto-Regular";*!*/
-/*  text-decoration: none;*/
-/*  display: flex;*/
-/*  align-items:center ;*/
-/*  justify-content: flex-start;*/
-/*}*/
-
-.logo-y, img{
-  height: 30px;
-}
-
-
-@media(max-width:620px){
-  .logo-name{
-    display:none;
-  }
-
-
-
-
-
-}
-
-
 </style>
