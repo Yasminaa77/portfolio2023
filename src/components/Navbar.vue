@@ -15,7 +15,7 @@ import { RouterLink, RouterView } from 'vue-router'
     </div>
     <div class="navbar-section pages">
 <!--      <router-link to="/#section1" class="navbar-link hover-underline-animation" @click="activate(`/`)"  :class="{active: Projects}">Projects</router-link>-->
-      <a href="/#section1" class="navbar-link hover-underline-animation" @click="activate(`/`)" :class="{active: Projects}">Projects</a>
+      <a href="/#section1" class="navbar-link hover-underline-animation" @click="scrollToSection" :class="{active: Projects}">Projects</a>
       <router-link to="/About" class="navbar-link hover-underline-animation" @click="activate(`/About`)"  :class="{active: About}">About</router-link>
     </div>
   </nav>
@@ -34,6 +34,13 @@ export default {
       if (this.path ===`/About`) {this.About=true;}
       else{this.Projects = true;}
 
+    },
+    scrollToSection() {
+      const section = document.querySelector('#section1');
+      window.scrollTo({
+        top: section.offsetTop,
+        behavior: 'smooth'
+      });
     }
   },
   mounted() {

@@ -67,3 +67,4 @@ main {
     <Footer class="navbarStyles"/>
   </main>
 </template>
+

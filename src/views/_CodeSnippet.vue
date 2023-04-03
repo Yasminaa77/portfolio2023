@@ -13,8 +13,8 @@ import TryOut from "../components/TryOut.vue";
     <div class="headerContent">
       <h1> Code Snippet</h1>
       <p>
-        <a target="_blank" href="#"> Github</a>,
-        <a target="_blank" href="#"> Live</a>
+        <a target="_blank" href="https://github.com/sam-meech-ward-bcit/code-examples-Yasminaa77"> Github</a>,
+        <a target="_blank" href="https://code-examples-yasminaa77.vercel.app/"> Live</a>
       </p>
       <p>The individual project of creating an app that provides a platform for developers to share their codes with others in the same space. Members, unlike guests, can not only view these snippets but also have the privilege of posting, liking, commenting and accessing their profile page with all their activities showing up.</p>
       <p>I developed this app in <span class="green">react.js </span> and I integrated <span class="green">Next Auth </span> to create sessions and gateways such as GitHub and google, the <span class="green">Prisma database</span> with many to many relationships to store data. This app uses "useEffects to fetch the posts over an AJAX request and display them on the Homepage.</p>

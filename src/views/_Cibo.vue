@@ -13,8 +13,8 @@ import TryOut from "../components/TryOut.vue";
     <div class="headerContent">
       <h1> My Cibo- In progress </h1>
       <p>
-        <a target="_blank" href="#"> Github</a>,
-        <a target="_blank" href="#"> Figma</a>
+        <a target="_blank" href="https://github.com/myCibo/myCiboNative"> Github</a>,
+        <a target="_blank" href="https://www.figma.com/file/41ljr7h0CS0RBn7OrA0nf7/Cibo?node-id=174%3A104&t=WnfnFi1YnGMbamK6-1"> Figma</a>
       </p>
 
       <p>For my term project, my classmates and I decided to work on an <span class="green">React Native </span>app that addresses a common problem related to food waste. The app allows users to create an inventory of their food supplies either by scanning their recipes or adding the items manually. Users can then optimize their supplies, track them, cook efficiently with their existing food products, and plan their grocery expenditures better.</p>

@@ -13,9 +13,9 @@ import TryOut from "../components/TryOut.vue";
     <div class="headerContent">
       <h1> Trash Queens </h1>
       <p>
-        <a target="_blank" href="#"> Github</a>,
+        <a target="_blank" href="https://github.com/phoenixlai833/TrashQueens"> Github</a>,
         <a target="_blank" href="https://trash-queens-dev.vercel.app/"> Live</a>,
-        <a target="_blank" href="#"> Figma</a>
+        <a target="_blank" href="https://www.figma.com/file/DdMZhIVqv59MYfNoGr7Bwx/Trash-Queen-%E2%80%93-FSWD?node-id=0%3A1&t=WnfnFi1YnGMbamK6-1"> Figma</a>
       </p>
       <p> As a member of a four-person team, I contributed to an educational recycling game project aimed at promoting proper recycling practices in British Columbia. Our team's goal was to create a fun and engaging game that would teach players how to recycle correctly.</p>
       <p>I took on the role of designing the app's game screens using <span class="green"> Figma</span>, from the initial concept to the final product. Additionally, I collaborated with the team to develop the front end of the game, utilizing<span class="green"> Vue.js</span> to ensure that it was both responsive and interactive.</p>
