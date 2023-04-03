@@ -14,7 +14,8 @@ import { RouterLink, RouterView } from 'vue-router'
       </router-link>
     </div>
     <div class="navbar-section pages">
-      <router-link to="/" class="navbar-link hover-underline-animation" @click="activate(`/`)"  :class="{active: Projects}">Projects</router-link>
+<!--      <router-link to="/#section1" class="navbar-link hover-underline-animation" @click="activate(`/`)"  :class="{active: Projects}">Projects</router-link>-->
+      <a href="/#section1" class="navbar-link hover-underline-animation" @click="activate(`/`)" :class="{active: Projects}">Projects</a>
       <router-link to="/About" class="navbar-link hover-underline-animation" @click="activate(`/About`)"  :class="{active: About}">About</router-link>
     </div>
   </nav>
@@ -67,7 +68,8 @@ export default {
 
   /*mask-image: linear-gradient(to bottom,black 10%,transparent 80%);*/
   /*backdrop-filter: invert(90%);*/
-  backdrop-filter: blur(4px);
+  /*backdrop-filter: blur(4px);*/
+  background-color: rgba(255,255,255,0.9);
   border-bottom: 0.4mm solid rgba(57,53,61,0.4);
 
 }
@@ -145,18 +147,19 @@ export default {
     display:none;
   }
 
-
   .navbar {
     padding: 1rem;
 
   }
 
+}
+
+@media(max-width:670px){
+
   .pages .navbar-link {
     font-size: 18px;
 
-
   }
 }
-
 
 </style>

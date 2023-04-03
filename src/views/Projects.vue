@@ -3,30 +3,27 @@
 
 
 //import Card from '../components/home/Card.vue';
-import Grid from '../components/projects-grid.vue';
+import ProjectGrid from '../components/ProjectGrid.vue';
 import TryOut from "../components/TryOut.vue";
 </script>
 
 <template>
 
   <div id="header">
-    <div id="headerContent">
+    <div class="headerContent">
       <p class="red"> Hi, My name is <a href="#">Yasmina</a></p>
       <h3 class="hero-text twoLines">I'm a Full-Stack<br> Developer</h3>
       <h3 class="hero-text oneLine">I'm a Full-Stack Developer</h3>
       <p class="header-desc">
-
         I bring the creativity, the coding skills, and a little bit of rain-or-shine spirit to the table.<br>
-<!--                This portfolio is a window into <a href="#" class="header-links">my projects</a> and <a href="#" class="header-links">  who I am</a>.-->
       </p>
-
     </div>
-    <img class="doodle" src="../assets/yasmina.gif">
+    <div class="doodleContainer">
+     <img class="doodle" src="../assets/yasmina.gif">
+    </div>
   </div>
-<div class="main">
-  <h2>Projects</h2>
-<!--  <TryOut />-->
-  <Grid/>
+<div id="section1" class="main">
+  <ProjectGrid/>
 </div>
 </template>
 
@@ -50,11 +47,18 @@ export default {
 </script>
 
 <style>
+html {
+  scroll-behavior: smooth;
+}
 /*@import url('./scss/main.scss');*/
 /*@import url('../../scss/main.scss');*/
 
-#headerContent{
+.headerContent{
   margin-right: 100px;
+}
+
+.doodleContainer{
+  /*align-self: flex-end;*/
 }
 .doodle{
   opacity: 0.9;
@@ -63,9 +67,8 @@ export default {
 
 #header{
   /*width:100%;*/
-
   height:80vh;
-  max-width: 1200px;
+  /*max-width: 1400px;*/
   margin: 0;
 
   display: flex;
@@ -83,8 +86,6 @@ export default {
 
   /*font-weight: 900;*/
   position: relative;
-
-
 }
 
 .hero-text{
@@ -135,7 +136,7 @@ main h2{
     height:60vh;
   }
 
-  #headerContent{
+  .headerContent{
     margin-right: 0;
   }
 
@@ -153,9 +154,6 @@ main h2{
   }
 
 }
-
-
-
 
 
 @media(max-width:768px) {

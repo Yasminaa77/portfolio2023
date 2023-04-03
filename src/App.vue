@@ -39,7 +39,6 @@ import Footer from "./components/Footer.vue";
   src: local("Rajdhani"),
   url('/src/assets/fonts/Rajdhani-Light.ttf') format("truetype");
 }
-
 main {
   display: flex;
   flex-direction: column;
@@ -50,9 +49,7 @@ main {
 .navbarStyles{
   z-index:200;
   /*background-color: #646cff;*/
-
 }
-
 .viewStyles{
   padding: 6% 6% 0 6%;
 }
@@ -68,6 +65,5 @@ main {
       <RouterView/>
     </span>
     <Footer class="navbarStyles"/>
-
   </main>
 </template>

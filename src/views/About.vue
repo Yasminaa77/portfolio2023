@@ -3,17 +3,15 @@
 
 
 //import Card from '../components/home/Card.vue';
-import Grid from '../components/projects-grid.vue';
+import Grid from '../components/ProjectGrid.vue';
 import TryOut from "../components/TryOut.vue";
 </script>
 
 <template>
 
-  <div id="header">
+  <div class=" about header">
     <div class="headerContent">
       <h1> Hey there.</h1>
-      <!--      <p class="header-desc">-->
-
       <p class="green">I am Yasmina Amirifar a full stack web developer based in Vancouver, Canada.</p>
       <p>My journey into web development began while I was studying digital design. As I learned the basics and became more interested in coding, I quickly fell in love with how coding can bring ideas to life.</p>
       <p>To take my skills to the next level, I enrolled in a Full-stack web development program where I was able to learn the ins and outs of both front-end and back-end development. Throughout the program, I worked on a variety of projects that allowed me to gain hands-on experience.</p>
@@ -48,16 +46,16 @@ export default {
 <style>
 /*@import url('./scss/main.scss');*/
 /*@import url('../../scss/main.scss');*/
-#header{
+.header{
 
-  /*height:70vh;*/
+  min-height:70vh;
   max-width: 1200px;
   margin: 50px 0;
 
   display: flex;
   justify-content: space-between;
-  /*justify-content: flex-start; !*change when hero text is centre*!*/
   align-items: center;
+
 }
 
 .headerContent{
@@ -82,7 +80,7 @@ transition: transform 0.5s ease; / Add a hover effect */
 
 
 
-#header a {
+.header a {
   text-decoration: none;
   color: #C82c28;
   font-family: 'Roboto-Medium';
@@ -96,55 +94,21 @@ main h2{
   /*color:red;*/
 }
 
-
-
-@media screen and (max-width: 896px) {
-
-  #header {
-    margin: 50px 0;
-  }
-
-  .headerContent{
-    margin-bottom:20px ;
-  }
-}
-
+/*//896*/
 @media screen and (max-width: 768px) {
 
-  #header {
+  .header {
     margin: 50px 0;
-
-
     flex-direction: column;
-    justify-content: space-around;
-    align-items:center;
-    /*margin:90px;*/
-    text-align: left;
+    align-items: center;
 
-    height:90vh;
   }
 
   .headerContent{
     margin-right: 0;
-  }
-
-  .hero-text{
-    font-size: 40px;
-    font-family:"Rajdhani-Regular";
-  }
-
-}
-
-
-@media screen and (max-width: 600px) {
-
-  #header {
-    margin: 100px 0;
+    margin-bottom: 20px;
+    text-align: left;
   }
 }
 
-
-
-
-/*}*/
 </style>
